@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaOS</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="screen">
+
+  <!-- PAGE PRINCIPALE -->
+  <section class="page active" id="home">
+
+    <div class="weather" id="weather">
+      ☀️ 21°C
+    </div>
+
+    <div class="clock" id="clock">
+      00:00:00
+    </div>
+
+    <div class="quote">
+      “Si on ne teste pas, on ne saura pas.”
+    </div>
+
+    <div class="battery" id="battery">
+      🔋 100%
+    </div>
+
+  </section>
+
+  <!-- PAGE GAUCHE -->
+  <section class="page" id="notes">
+
+    <h2>Notes</h2>
+
+    <textarea id="noteInput"
+      placeholder="Écris ici..."></textarea>
+
+  </section>
+
+  <!-- PAGE DROITE -->
+  <section class="page" id="tools">
+
+    <h2>Chronomètre</h2>
+
+    <div id="stopwatch">00:00:00</div>
+
+    <button onclick="startStopwatch()">START</button>
+    <button onclick="resetStopwatch()">RESET</button>
+
+  </section>
+
+</div>
+
+<!-- bouton caché -->
+<div id="secretBtn"></div>
+
+<!-- calculatrice -->
+<div class="calculator hidden" id="calculator">
+
+  <input type="text" id="calcDisplay">
+
+  <button onclick="calc('7')">7</button>
+  <button onclick="calc('8')">8</button>
+  <button onclick="calc('9')">9</button>
+
+  <button onclick="calc('4')">4</button>
+  <button onclick="calc('5')">5</button>
+  <button onclick="calc('6')">6</button>
+
+  <button onclick="calc('1')">1</button>
+  <button onclick="calc('2')">2</button>
+  <button onclick="calc('3')">3</button>
+
+  <button onclick="calc('0')">0</button>
+  <button onclick="calc('+')">+</button>
+  <button onclick="calc('-')">-</button>
+
+  <button onclick="calculate()">=</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
